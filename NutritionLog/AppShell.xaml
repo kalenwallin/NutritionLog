@@ -36,10 +36,9 @@
 
     <!--
         If you would like to navigate to this content you can do so by calling
-        await Shell.Current.GoToAsync("//LoginPage");
+        await Shell.Current.GoToAsync("//Page");
     -->
     <TabBar>
-        <ShellContent Route="LoginPage" ContentTemplate="{DataTemplate local:LoginPage}" />
     </TabBar>
 
 
