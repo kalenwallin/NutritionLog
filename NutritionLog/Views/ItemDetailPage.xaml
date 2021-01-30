@@ -2,13 +2,66 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="NutritionLog.Views.ItemDetailPage"
-             Title="{Binding Title}">
+             Title="{Binding Date}">
+    <ScrollView>
+        <Grid RowSpacing="10" ColumnSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
 
-    <StackLayout Spacing="20" Padding="15">
-        <Label Text="Text:" FontSize="Medium" />
-        <Label Text="{Binding Text}" FontSize="Small"/>
-        <Label Text="Description:" FontSize="Medium" />
-        <Label Text="{Binding Description}" FontSize="Small"/>
-    </StackLayout>
-    
+            <!-- Row 1 -->
+            <Label Grid.Row="0" Grid.Column="0" Text="Date:" FontSize="Medium" Margin="10,20,0,0"/>
+            <Label Grid.Row="0" Grid.Column="1" Text="{Binding Date}" FontSize="Medium" Margin="0,20,0,0"/>
+            <Button Grid.Row="0" Grid.Column="4" Text="Set" Margin="0,10,10,0"></Button>
+
+            <!-- Row 2 -->
+            <Label Grid.Row="1" Grid.Column="0" Text="Weight:" FontSize="Medium" Margin="10,20,0,0" />
+            <Label Grid.Row="1" Grid.Column="1" Text="{Binding Weight}" FontSize="Medium" Margin="0,20,0,0"/>
+            <Button Grid.Row="1" Grid.Column="4" Text="Set" Margin="0,10,10,0"></Button>
+
+            <!-- Row 3 -->
+            <Label Grid.Row="2" Grid.Column="0" Text="Calories:" FontSize="Medium" Margin="10,20,0,0"></Label>
+            <Label Grid.Row="2" Grid.Column="1" Text="{Binding Calories}" FontSize="Medium" Margin="0,20,0,0"/>
+            <Button Grid.Row="2" Grid.Column="2" Text="Add" Margin="0,10,0,0"></Button>
+            <Button Grid.Row="2" Grid.Column="3" Text="Set" Margin="0,10,0,0"></Button>
+            <Button Grid.Row="2" Grid.Column="4" Text="Reset" Margin="0,10,10,0"></Button>
+
+            <!-- Row 4 -->
+            <Label Grid.Row="3" Grid.Column="0" Text="Protein:" FontSize="Medium" Margin="10,20,0,0"></Label>
+            <Label Grid.Row="3" Grid.Column="1" Text="{Binding Protein}" FontSize="Medium" Margin="0,20,0,0"/>
+            <Button Grid.Row="3" Grid.Column="2" Text="Add" Margin="0,10,0,0"></Button>
+            <Button Grid.Row="3" Grid.Column="3" Text="Set" Margin="0,10,0,0"></Button>
+            <Button Grid.Row="3" Grid.Column="4" Text="Reset" Margin="0,10,10,0"></Button>
+
+            <!-- Row 5 -->
+            <Label Grid.Row="4" Grid.Column="0" Text="Carbs:" FontSize="Medium" Margin="10,20,0,0"></Label>
+            <Label Grid.Row="4" Grid.Column="1" Text="{Binding Carbs}" FontSize="Medium" Margin="0,20,0,0"/>
+            <Button Grid.Row="4" Grid.Column="2" Text="Add" Margin="0,10,0,0"></Button>
+            <Button Grid.Row="4" Grid.Column="3" Text="Set" Margin="0,10,0,0"></Button>
+            <Button Grid.Row="4" Grid.Column="4" Text="Reset" Margin="0,10,10,0"></Button>
+            
+            <!-- Row 6 -->
+            <Label Grid.Row="5" Grid.Column="0" Text="Fat:" FontSize="Medium" Margin="10,20,0,0"></Label>
+            <Label Grid.Row="5" Grid.Column="1" Text="{Binding Fat}" FontSize="Medium" Margin="0,20,0,0"/>
+            <Button Grid.Row="5" Grid.Column="2" Text="Add" Margin="0,10,0,0"></Button>
+            <Button Grid.Row="5" Grid.Column="3" Text="Set" Margin="0,10,0,0"></Button>
+            <Button Grid.Row="5" Grid.Column="4" Text="Reset" Margin="0,10,10,0"></Button>
+
+            <!-- Row 7 -->
+            <Button Grid.Row="6" Grid.ColumnSpan="5" Text="Delete" Margin="10,10,10,10"></Button>
+        </Grid>
+    </ScrollView>
+
 </ContentPage>
