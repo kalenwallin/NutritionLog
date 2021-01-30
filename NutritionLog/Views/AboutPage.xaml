@@ -30,11 +30,12 @@
                        HorizontalOptions="Center"
                        HorizontalTextAlignment="Center"
                        FontSize="24"/>
+                <Button Text="Get Started" Margin="30,100,30,30" Command="{Binding OnButtonPressedCommand}"></Button>
                 <Label Text="Created by Kalen Wallin, Parul Aggarwal, and Ritvik Handa"
                        HorizontalOptions="Center"
                        HorizontalTextAlignment="Center"
                        FontSize="20"
-                       Margin="30,300,30,30"/>
+                       Margin="30,100,30,30"/>
             </StackLayout>
         </ScrollView>
     </Grid>

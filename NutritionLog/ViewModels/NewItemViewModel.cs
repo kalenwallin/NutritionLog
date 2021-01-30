@@ -9,8 +9,12 @@ namespace NutritionLog.ViewModels
 {
     public class NewItemViewModel : BaseViewModel
     {
-        private string text;
-        private string description;
+        private string date;
+        private string weight;
+        private string calories;
+        private string protein;
+        private string carbs;
+        private string fat;
 
         public NewItemViewModel()
         {
@@ -22,20 +26,42 @@ namespace NutritionLog.ViewModels
 
         private bool ValidateSave()
         {
-            return !String.IsNullOrWhiteSpace(text)
-                && !String.IsNullOrWhiteSpace(description);
+            return !String.IsNullOrWhiteSpace(date);
         }
 
-        public string Text
+        public string Date
         {
-            get => text;
-            set => SetProperty(ref text, value);
+            get => date;
+            set => SetProperty(ref date, value);
         }
 
-        public string Description
+        public string Weight
         {
-            get => description;
-            set => SetProperty(ref description, value);
+            get => weight;
+            set => SetProperty(ref weight, value);
+        }
+
+        public string Calories
+        {
+            get => calories;
+            set => SetProperty(ref calories, value);
+        }
+
+        public string Protein
+        {
+            get => protein;
+            set => SetProperty(ref protein, value);
+        }
+
+        public string Carbs
+        {
+            get => carbs;
+            set => SetProperty(ref carbs, value);
+        }
+        public string Fat
+        {
+            get => fat;
+            set => SetProperty(ref fat, value);
         }
 
         public Command SaveCommand { get; }
@@ -52,8 +78,12 @@ namespace NutritionLog.ViewModels
             Item newItem = new Item()
             {
                 Id = Guid.NewGuid().ToString(),
-                Text = Text,
-                Description = Description
+                Date = Date,
+                Weight = Weight,
+                Calories = Calories,
+                Protein = Protein,
+                Carbs = Carbs,
+                Fat = Fat
             };
 
             await DataStore.AddItemAsync(newItem);

@@ -10,20 +10,44 @@ namespace NutritionLog.ViewModels
     public class ItemDetailViewModel : BaseViewModel
     {
         private string itemId;
-        private string text;
-        private string description;
+        private string date;
+        private string weight;
+        private string calories;
+        private string protein;
+        private string carbs;
+        private string fat;
         public string Id { get; set; }
 
-        public string Text
+        public string Date
         {
-            get => text;
-            set => SetProperty(ref text, value);
+            get => date;
+            set => SetProperty(ref date, value);
         }
 
-        public string Description
+        public string Weight
         {
-            get => description;
-            set => SetProperty(ref description, value);
+            get => weight;
+            set => SetProperty(ref weight, value);
+        }
+        public string Calories
+        {
+            get => calories;
+            set => SetProperty(ref calories, value);
+        }
+        public string Protein
+        {
+            get => protein;
+            set => SetProperty(ref protein, value);
+        }
+        public string Carbs
+        {
+            get => carbs;
+            set => SetProperty(ref carbs, value);
+        }
+        public string Fat
+        {
+            get => fat;
+            set => SetProperty(ref fat, value);
         }
 
         public string ItemId
@@ -45,8 +69,12 @@ namespace NutritionLog.ViewModels
             {
                 var item = await DataStore.GetItemAsync(itemId);
                 Id = item.Id;
-                Text = item.Text;
-                Description = item.Description;
+                Date = item.Date;
+                Weight = item.Weight;
+                Calories = item.Calories;
+                Protein = item.Protein;
+                Carbs = item.Carbs;
+                Fat = item.Fat;
             }
             catch (Exception)
             {
