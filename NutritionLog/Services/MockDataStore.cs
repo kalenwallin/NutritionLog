@@ -14,9 +14,9 @@ namespace NutritionLog.Services
         {
             items = new List<Item>()
             {
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Date", Description="Weight" },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Date 2", Description="Weight 2" },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Date 3", Description="Weight 3" },
+                new Item { Id = Guid.NewGuid().ToString(), Date = "Date", Weight="Weight", Calories="Calories", Protein="Protein", Carbs="Carbs", Fat="Fat"},
+                new Item { Id = Guid.NewGuid().ToString(), Date = "Date 2", Weight="Weight 2", Calories="Calories 2", Protein="Protein 2", Carbs="Carbs 2", Fat="Fat 2" },
+                new Item { Id = Guid.NewGuid().ToString(), Date = "Date 3", Weight="Weight 3", Calories="Calories 3", Protein="Protein 3", Carbs="Carbs 3", Fat="Fat 3" },
             };
         }
 
