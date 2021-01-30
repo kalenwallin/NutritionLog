@@ -8,7 +8,6 @@ C:\Users\kalen\Desktop\CornHacks2021\NutritionLog\NutritionLog\obj\Debug\netstan
 C:\Users\kalen\Desktop\CornHacks2021\NutritionLog\NutritionLog\obj\Debug\netstandard2.0\Views\AboutPage.xaml.g.cs
 C:\Users\kalen\Desktop\CornHacks2021\NutritionLog\NutritionLog\obj\Debug\netstandard2.0\Views\ItemDetailPage.xaml.g.cs
 C:\Users\kalen\Desktop\CornHacks2021\NutritionLog\NutritionLog\obj\Debug\netstandard2.0\Views\ItemsPage.xaml.g.cs
-C:\Users\kalen\Desktop\CornHacks2021\NutritionLog\NutritionLog\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs
 C:\Users\kalen\Desktop\CornHacks2021\NutritionLog\NutritionLog\obj\Debug\netstandard2.0\Views\NewItemPage.xaml.g.cs
 C:\Users\kalen\Desktop\CornHacks2021\NutritionLog\NutritionLog\obj\Debug\netstandard2.0\NutritionLog.AssemblyInfoInputs.cache
 C:\Users\kalen\Desktop\CornHacks2021\NutritionLog\NutritionLog\obj\Debug\netstandard2.0\NutritionLog.AssemblyInfo.cs
